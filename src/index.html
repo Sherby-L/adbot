@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>adbot</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="mainblock">
+          <!-- <img src="img/frame.png" alt="pic" height="500" /> -->
+          <h1 class="mainblock__title">Как работает бот</h1>
+          <div class="mainblock__wrap">
+            <p class="mainblock__text mainblock__text-active">
+              Круглосуточный мониторинг разделов анонсов листингов 10 топовых
+              бирж с периодичностью 5 запросов в секунду.
+            </p>
+            <div class="picture-content"></div>
+          </div>
+          <div class="mainblock__wrap">
+            <p class="mainblock__text">
+              Мгновенная покупка на одной из бирж, где эта монета уже торгуется.
+            </p>
+            <div class="picture-content1"></div>
+          </div>
+          <div class="mainblock__wrap">
+            <p class="mainblock__text">
+              Автоматическая продажа на установленный Take Profit или продажа
+              вручную.
+            </p>
+            <div class="picture-content2"></div>
+          </div>
+          <div class="mainblock__dots">
+            <div class="mainblock__dots-dot"></div>
+            <div class="mainblock__dots-dot"></div>
+            <div class="mainblock__dots-dot mainblock__dots-active"></div>
+          </div>
+        </div>
+        <div class="autorization">
+          <div class="autorization__wrap">
+            <h1 class="autorization__logo">adbot</h1>
+            <h2 class="autorization__title">Вход</h2>
+            <div class="inputs">
+              <div class="inputs__email">
+                <p class="inputs__text">Email</p>
+                <input
+                  class="inputs__inp"
+                  type="text"
+                  placeholder="debra.holt@example.com"
+                />
+                <p class="inputs__text">Пароль</p>
+                <input class="inputs__inp" type="text" />
+                <div class="inputs__pass">
+                  <p>Запомнить меня</p>
+                  <p data-modal class="inputs__link">Забыли пароль?</p>
+                </div>
+              </div>
+            </div>
+            <button class="autorization__btn">Войти</button>
+            <p class="autorization__txt">
+              У вас нет аккаунта? Создайте аккаунт
+            </p>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal__title">
+            <h2>Восстановление пароля</h2>
+            <div data-close class="modal-x"></div>
+          </div>
+          <p class="modal__mail">Email</p>
+          <input
+            class="modal__inp"
+            type="text"
+            placeholder="debra.holt@example.com"
+          />
+          <button class="autorization__btn">Сброс пароля</button>
+        </div>
+      </header>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
