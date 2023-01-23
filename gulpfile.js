@@ -8,8 +8,17 @@ const browserSync = require('browser-sync').create();
 
 const dist = './dist';
 
+// const html = () => {
+//   return src('./src/index.html')
+//     .pipe(gulp.dest(dist))
+//     .pipe(browserSync.stream());
+// };
+
 const html = () => {
-  return src('./src/index.html')
+  gulp.src('./src/**/*.html').pipe(gulp.dest(dist));
+
+  return gulp
+    .src('./src/**/*.html')
     .pipe(gulp.dest(dist))
     .pipe(browserSync.stream());
 };
@@ -50,7 +59,7 @@ const watcher = () => {
     notify: true,
   });
 
-  gulp.watch('./src/index.html', gulp.parallel('html'));
+  gulp.watch('./src/*.html', gulp.parallel('html'));
   gulp.watch('./src/img/**/*.*'), gulp.series('clean');
   gulp.watch('./src/img/icons/**/*.*', gulp.parallel('copyAssets'));
   gulp.watch('./src/img/**/*.*', gulp.parallel('copyAssets'));

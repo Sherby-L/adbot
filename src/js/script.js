@@ -4,6 +4,8 @@ const textContent = document.querySelectorAll('.mainblock__wrap');
 
 const dotsParent = document.querySelector('.mainblock__dots');
 
+const fon = document.querySelector('.fon');
+
 // const pictureContent = document.querySelectorAll();
 
 function hideTextContent() {
@@ -47,13 +49,15 @@ function openModal() {
   modal.classList.add('show', 'fade');
   modal.classList.remove('hide');
   document.body.style.overflow = 'hidden';
+  fon.classList.add('fon-on');
 }
 
 modalTrigger.addEventListener('click', openModal);
 
 function closeModal() {
   modal.classList.add('hide');
-  modal.classList.remove('show', 'fade');
+  modal.classList.remove('fade', 'show');
   document.body.style.overflow = '';
+  fon.classList.remove('fon-on');
 }
 modalCloseBtn.addEventListener('click', closeModal);
