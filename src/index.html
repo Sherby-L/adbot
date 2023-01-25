@@ -65,27 +65,55 @@
                 </div>
               </div>
             </div>
-            <button class="autorization__btn">Войти</button>
+            <button data-modal-come class="autorization__btn">Войти</button>
             <a href="check.html" class="autorization__txt">
               У вас нет аккаунта? Создайте аккаунт
             </a>
           </div>
         </div>
         <div class="fon"></div>
-        <div class="modal">
-          <div class="modal__title">
-            <h2>Восстановление пароля</h2>
-            <div data-close class="modal-x"></div>
-          </div>
-          <p class="modal__mail">Email</p>
-          <input
-            class="modal__inp"
-            type="text"
-            placeholder="debra.holt@example.com"
-          />
-          <button class="autorization__btn">Сброс пароля</button>
-        </div>
       </header>
+      <div class="modal">
+        <div class="modal__title">
+          <h2>Восстановление пароля</h2>
+          <div data-close class="modal-x"></div>
+        </div>
+        <p class="modal__mail">Email</p>
+        <input
+          class="modal__inp"
+          type="text"
+          placeholder="debra.holt@example.com"
+        />
+        <button class="autorization__btn">Сброс пароля</button>
+      </div>
+      <div class="modal-authentication">
+        <div class="modal-x-wrap">
+          <div data-close-come class="modal-x"></div>
+        </div>
+        <h3 class="modal-authentication__title">
+          Двухфакторная аутентификация
+        </h3>
+        <p class="modal-authentication__text">
+          Введите 6-значный код из приложения для двухфакторной аутентификации.
+        </p>
+        <div class="modal-authentication__numbers">
+          <input class="modal-authentication__numbers-item" type="number" />
+          <input
+            class="modal-authentication__numbers-item"
+            type="number"
+            maxlength="1"
+          />
+          <input
+            class="modal-authentication__numbers-item"
+            type="number"
+            maxlength="1"
+          />
+          <input class="modal-authentication__numbers-item" type="number" />
+          <input class="modal-authentication__numbers-item" type="number" />
+          <input class="modal-authentication__numbers-item" type="number" />
+        </div>
+        <button class="autorization__btn">Войти</button>
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>
